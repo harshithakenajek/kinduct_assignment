@@ -10,7 +10,7 @@ Clone the project using: git clone https://github.com/harshithakenajek/kinduct_a
     (ENV) $
 
 Run the app using:  python app.py
-                    Hit the api (POST METHOD) from the postman http://127.0.0.1:5000/print_message with body message and delivery time.
+                    Hit the api (POST METHOD) from the postman http://127.0.0.1:5000/kinduct/api/v1/message with body message and delivery time.
                     
 		    Example: 
                     {

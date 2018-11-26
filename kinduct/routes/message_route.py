@@ -13,7 +13,7 @@ print("Iam coming here")
 scheduler = BackgroundScheduler({'apscheduler.timezone':'Asia/Calcutta'})
 scheduler.start()
 
-@message_route.route("/print_message", methods=["POST"])
+@message_route.route("/message", methods=["POST"])
 def print_messages():
     """
     print the incoming message after the given interval of time

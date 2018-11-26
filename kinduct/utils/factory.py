@@ -1,12 +1,7 @@
 from flask import Flask
 from kinduct.routes.message_route import message_route
 
-def root_app(app):
-        # from clinical_portal.utils.config import DevelopmentConfig
-
-        # app.config.from_object(DevelopmentConfig)
-
-    # print("prefix",prefix,app)
+def root_app(app,prefix):
     app.register_blueprint(
-            message_route)
+            message_route,url_prefix="/{prefix}/api/v1".format(prefix=prefix))
     
