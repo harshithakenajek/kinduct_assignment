@@ -35,7 +35,10 @@ def print_messages():
             "message": "Message -- "+data["message"]+" -- will be written to the console at "+data["delivery_time"],
             # "job_details": job
         }
-        return jsonify(payload)
+        return Response(
+            response=json.dumps(payload),
+            status=202, mimetype='application/json'
+        )
     else:
         # print("Invalid Input")
         return Response(
